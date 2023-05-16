@@ -1,0 +1,216 @@
+body{
+    background-color: honeydew;
+    height: 2000px;
+    padding: -5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* awal navbar */
+.navbar.navbar-expand-lg{
+   background-color:rgb(68, 86, 183);
+}
+.navbar.navbar-expand-lg .navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(2, 2, 2);
+    color:rgba(238, 241, 243, 0.5);
+    transition: all 1s;
+    position: relative;
+    left: 20px;
+    border-left: 3px double palegoldenrod;
+}
+.navbar.navbar-expand-lg .navbar-brand:hover{
+    color:rgb(0, 255, 81);
+}
+.navbar img{
+    position: relative;
+    left: 10px;
+    border: 2px solid palegoldenrod;
+    border-radius: 0px 20px 0px 20px;
+}
+.collapse.navbar-collapse .nav-item{
+    position: relative;
+    left: 20px;
+    margin-right: 20px;
+}
+.collapse.navbar-collapse .nav-link.active{
+    color: rgb(69, 61, 71);
+    font-size: 1.1rem;
+    transition: 1s;
+    font-family: 'Oswald', sans-serif;
+}
+.collapse.navbar-collapse .nav-link.active:hover{
+    color: rgb(5, 216, 104);
+}
+.collapse.navbar-collapse a{
+    color: rgb(69, 61, 71);
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 450ms ease;
+    
+}
+.collapse.navbar-collapse a:hover{
+    color: rgb(5, 216, 104);
+    transform: scale(1.1);
+}
+/* tutup navbar*/
+
+
+
+
+/* awal carousel */
+.carousel.carousel-dark.slide{
+    border-left: 5px double blue;
+    border-right: 5px double  blue ;
+    border-bottom: 5px double  blue ;
+}
+/* tutup carousel */
+
+
+
+
+/* awal section trending topik */
+.container-trendingtopic{
+    width: 95vw;
+    margin: 50px auto;
+    background-image: url(gambar/logopwb2.png);
+    background-size: cover;
+    background-position: 0 -350px;
+    border-top: 5px solid rgb(196, 203, 211);
+    border-bottom: 5px solid rgb(186, 194, 202);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'berita-1 berita-1 berita-2 berita-2'
+    'berita-3 berita-3 berita-4 berita-4'
+    'berita-5 berita-5 berita-6 berita-6'
+    'berita-7 berita-7 berita-8 berita-8'
+    ;
+    gap: 5px;
+}
+.container-trendingtopic div{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* berita 1 */
+.berita-1{
+    width: 100%;
+    grid-area: berita-1 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-1:hover{
+    background-color: rgb(138, 179, 122);
+}
+
+/* berita 2 */
+.berita-2{
+    width: 100%;
+    grid-area: berita-2 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-2:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 3 */
+.berita-3{
+    width: 100%;
+    grid-area: berita-3 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-3:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 4 */
+.berita-4{
+    width: 100%;
+    grid-area: berita-4 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-4:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 5 */
+.berita-5{
+    width: 100%;
+    grid-area: berita-5 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-5:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 6 */
+.berita-6{
+    width: 100%;
+    grid-area: berita-6 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-6:hover{
+    background-color: rgb(138, 179, 122);
+}
+.berita-7{
+    width: 100%;
+    grid-area: berita-7 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-7:hover{
+    background-color: rgb(138, 179, 122);
+}
+.berita-8{
+    width: 100%;
+    grid-area: berita-8 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-8:hover{
+    background-color: rgb(138, 179, 122);
+}
+
+
+/* responsive breakpoint */
+@media only screen and (max-width:768px){
+    .container-trendingtopic{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    'berita-1 berita-1 '
+    'berita-2 berita-2 '
+    'berita-3 berita-3 '
+    'berita-4 berita-4 '
+    'berita-5 berita-5 '
+    'berita-6 berita-6 '
+    'berita-7 berita-7 '
+    'berita-8 berita-8 '
+}
+
+}
+
+
