@@ -5,15 +5,192 @@
     list-style: none;
     text-decoration: none;
 }
-.heading{
-   margin: 0 auto;
-   float: left;
+.heading h1{
+    text-align: center;
+    font-size: calc(3vw + 1.1rem);
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(60, 60, 101);
 }
-.heading img{
-    float: left;
+.container{
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 500px);
+    grid-template-areas:
+    'content-1 content-2 content-2 content-2' 
+    'content-1 content-3 content-3 content-3' 
+    ;
+}
+.container h1{
+    color: blue;
+    text-align: center;
+}
+.content-1{
+    grid-area: content-1;
+    background-color: lightblue;
+}
+.content-2{
+    grid-area: content-2;
+    background-color: rgb(35, 154, 93);
+}
+.content-3{
+    grid-area: content-3;
+    background-color: rgb(201, 173, 230);}
+@media (max-width:768px){
+    .container{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 500px);
+    grid-template-areas:
+    'content-1 content-1 content-1 content-1' 
+    'content-2 content-2 content-2 content-2' 
+    'content-3 content-3 content-3 content-3' 
+    ;
+    }
+}
+
+/* awal section trending topik */
+.container-tentang-pendidikan{
+    width: 100vw;
+    height: 100vw;
+    background-image: url(../gambar/logopwb1.png);
+    background-size: cover;
+    background-position: 0 -350px;
+    border-top: 5px solid rgb(196, 203, 211);
+    border-bottom: 5px solid rgb(186, 194, 202);
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'berita-1 berita-1 berita-2 berita-2'
+    'berita-3 berita-3 berita-4 berita-4'
+    'berita-5 berita-5 berita-6 berita-6'
+    'berita-7 berita-7 berita-8 berita-8'
+    ;
+    gap: 5px;
+}
+.container-tentang-pendidikan div{
+    margin: auto;
+    text-align: center;
+}
+
+/* berita 1 */
+.berita-1{
+    width: 100%;
+    grid-area: berita-1 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-1:hover{
+    background-color: rgb(138, 179, 122);
+}
+
+/* berita 2 */
+.berita-2{
+    width: 100%;
+    grid-area: berita-2 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-2:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 3 */
+.berita-3{
+    width: 100%;
+    grid-area: berita-3 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-3:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 4 */
+.berita-4{
+    width: 100%;
+    grid-area: berita-4 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-4:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 5 */
+.berita-5{
+    width: 100%;
+    grid-area: berita-5 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-5:hover{
+    background-color: rgb(138, 179, 122);
+}
+/* berita 6 */
+.berita-6{
+    width: 100%;
+    grid-area: berita-6 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-6:hover{
+    background-color: rgb(138, 179, 122);
+}
+.berita-7{
+    width: 100%;
+    grid-area: berita-7 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-7:hover{
+    background-color: rgb(138, 179, 122);
+}
+.berita-8{
+    width: 100%;
+    grid-area: berita-8 ;
+    border-top: 5px double blue;
+    border-bottom: 5px double blue;
+    background-color: rgb(86, 125, 127);
+    transition: all 1s ease ;
+}
+.berita-8:hover{
+    background-color: rgb(138, 179, 122);
 }
 
 
+/* responsive breakpoint */
+@media only screen and (max-width:768px){
+    .container-tentang-pendidikan{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    'berita-1 berita-1 '
+    'berita-2 berita-2 '
+    'berita-3 berita-3 '
+    'berita-4 berita-4 '
+    'berita-5 berita-5 '
+    'berita-6 berita-6 '
+    'berita-7 berita-7 '
+    'berita-8 berita-8 '
+}
 
+}
 
 
