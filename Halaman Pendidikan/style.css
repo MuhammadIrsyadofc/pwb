@@ -107,8 +107,6 @@
 .berita-3{
     width: 100%;
     grid-area: berita-3 ;
-    border-top: 5px double blue;
-    border-bottom: 5px double blue;
     background-color: rgb(86, 125, 127);
     transition: all 1s ease ;
 }
