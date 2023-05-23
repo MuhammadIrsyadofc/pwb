@@ -63,9 +63,7 @@ body{
 
 /* awal carousel */
 .carousel.carousel-dark.slide{
-    border-left: 5px double blue;
-    border-right: 5px double  blue ;
-    border-bottom: 5px double  blue ;
+    border-bottom: 2px solid  blue ;
 }
 /* tutup carousel */
 
@@ -102,8 +100,8 @@ body{
 .berita-1{
     width: 100%;
     grid-area: berita-1 ;
-    border-top: 5px double blue;
-    border-bottom: 5px double blue;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
     background-color: rgb(86, 125, 127);
     transition: all 1s ease ;
 }
